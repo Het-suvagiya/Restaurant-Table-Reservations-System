@@ -1,0 +1,27 @@
+# ─── Sensitive Configuration ──────────────────────────────────────────────────
+# NEVER commit real credentials - use config.example.php as a template
+config.php
+
+# ─── Composer / Dependencies ──────────────────────────────────────────────────
+/vendor/
+composer.lock
+
+# ─── Uploaded User Files ──────────────────────────────────────────────────────
+/uploads/
+
+# ─── OS & Editor Junk ─────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# ─── PHP Environment ──────────────────────────────────────────────────────────
+.env
+.env.local
+*.log
+error_log
