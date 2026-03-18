@@ -85,15 +85,17 @@ This installs **PHPMailer** and **Google API Client** from `composer.json`.
 ### Step 3 — Create the Database
 
 1. Open **phpMyAdmin** → `http://localhost/phpmyadmin`
-2. Click **New** and create a database named:
+2. Click **New** and create a database named exactly:
    ```
    quicktable_db
    ```
-3. Select the database, click **Import**, and upload the SQL file:
+3. Select the newly created database, click the **Import** tab, and upload:
    ```
-   quicktable_db.sql
+   QuickTable_DB_setup.sql
    ```
-   _(This file contains the full schema and sample data)_
+   _(This file is included in the root of the repository and contains the full database schema with all required tables and a default admin account.)_
+
+> ⚠️ **Important:** Make sure you select the `quicktable_db` database **before** importing. Do not import into the default `mysql` or `information_schema` databases.
 
 ---
 
@@ -208,21 +210,22 @@ quicktable/
 │   ├── dashboard.php
 │   ├── setup.php           # Restaurant profile & menu setup
 │   └── bookings.php
-├── assets/                 # CSS, JS, images
-├── uploads/                # User-uploaded restaurant images (git-ignored)
-├── vendor/                 # Composer dependencies (git-ignored)
-├── config.php              # ⚠️ Your private config — NOT committed
-├── config.example.php      # ✅ Safe template — copy this to config.php
-├── index.php               # Homepage
-├── book.php                # Booking flow
-├── register.php            # User registration
-├── login.php               # Login page
-├── register_restaurant.php # Restaurant owner registration
-├── my_bookings.php         # User booking history
-├── favorites.php           # Favorites API
-├── header.php              # Shared header/nav
-├── footer.php              # Shared footer
-└── functions.php           # Global helper functions
+├── assets/                      # CSS, JS, images
+├── uploads/                     # User-uploaded restaurant images (git-ignored)
+├── vendor/                      # Composer dependencies (git-ignored)
+├── QuickTable_DB_setup.sql      # ✅ Database schema — import this into phpMyAdmin
+├── config.php                   # ⚠️ Your private config — NOT committed
+├── config.example.php           # ✅ Safe template — copy this to config.php
+├── index.php                    # Homepage
+├── book.php                     # Booking flow
+├── register.php                 # User registration
+├── login.php                    # Login page
+├── register_restaurant.php      # Restaurant owner registration
+├── my_bookings.php              # User booking history
+├── favorites.php                # Favorites API
+├── header.php                   # Shared header/nav
+├── footer.php                   # Shared footer
+└── functions.php                # Global helper functions
 ```
 
 ---
