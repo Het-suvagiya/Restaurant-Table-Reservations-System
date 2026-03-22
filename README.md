@@ -60,7 +60,7 @@ Before you begin, make sure you have the following installed:
 ### Step 1 — Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/quicktable.git
+git clone https://github.com/Het-suvagiya/Restaurant-Table-Reservations-System.git
 ```
 
 Move the project folder into your web server's root directory:
